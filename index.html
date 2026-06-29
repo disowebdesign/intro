@@ -10,8 +10,8 @@
 
   body {
     background: #080808;
-    width: 1080px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,10 +45,10 @@
   }
 
   .letter {
-    font-size: 148px;
+    font-size: clamp(64px, 18vw, 148px);
     font-weight: 200;
     color: #ffffff;
-    letter-spacing: 12px;
+    letter-spacing: clamp(4px, 2vw, 12px);
     opacity: 0;
     transform: translateY(30px);
   }
